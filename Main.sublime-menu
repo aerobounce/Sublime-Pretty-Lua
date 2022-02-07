@@ -1,0 +1,26 @@
+[
+    {
+        "id": "preferences",
+        "children": [
+            {
+                "id": "package-settings",
+                "caption": "Package Settings",
+                "children": [
+                    {
+                        "caption": "Pretty Lua",
+                        "children": [
+                            {
+                                "caption": "Settings",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/Pretty Lua/Pretty Lua.sublime-settings",
+                                    "default": "{\n$0\n}"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
