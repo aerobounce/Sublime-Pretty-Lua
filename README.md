@@ -17,6 +17,8 @@
 
 ## Install
 
+> Package Control: Currently waiting for PR to be merge
+
 Clone this repository to `.../Sublime Text/Packages/`.
 
 
