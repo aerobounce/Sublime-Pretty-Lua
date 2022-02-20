@@ -19,12 +19,17 @@
 
 > Package Control: Currently waiting for PR to be merge
 
-Clone this repository to `.../Sublime Text/Packages/`.
+#### Manual Install
 
+1. Install ![StyLua][stylua]
+2. On terminal, move to the directory where you can open by `Preferences ▶ Browse Packages`
+3. Clone this repository:
 
-## Requirements
+```sh
+git clone "https://github.com/aerobounce/Sublime-Pretty-Lua.git" "Pretty Lua"
+```
 
-[`stylua`][stylua]
+4. On Linux / Windows, specify absolute path to `stylua`.
 
 
 [tags]: https://github.com/aerobounce/Sublime-AutoClosePanel/tags
