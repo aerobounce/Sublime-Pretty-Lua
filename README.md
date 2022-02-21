@@ -6,7 +6,7 @@
 [![](https://img.shields.io/badge/Sublime%20Text-3+-orange.svg)][packagecontrol]
 [![](https://img.shields.io/github/v/tag/aerobounce/Sublime-Pretty-Lua?display_name=tag)][tags]
 
-- Uses ![StyLua][stylua]
+- Uses [`stylua`][stylua]
 - Format on Save
 - Fast Formatting
 - Syntax Checking
@@ -21,7 +21,7 @@
 
 #### Manual Install
 
-1. Install ![StyLua][stylua]
+1. Install [`stylua`][stylua]
 2. On terminal, move to the directory where you can open by `Preferences ▶ Browse Packages`
 3. Clone this repository:
 
