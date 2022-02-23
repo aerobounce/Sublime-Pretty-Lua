@@ -104,12 +104,16 @@ class PrettyLua:
         def phantom_content():
             # Remove unneeded text from stderr
             error_message = stderr.replace("error: error parsing: ", "")
-            error_message = compile(
-                r"\ \(starting from line \d+, character \d+ and ending on line \d+, character \d+\)"
-            ).sub("", error_message)
+            columns_lines = compile(
+                r"\ \(starting from line (\d+), character (\d+) and ending on line \d+, character \d+\)"
+            )
+            positions = columns_lines.findall(error_message)
+            error_message = columns_lines.sub("", error_message)
             error_message = error_message.replace("additional information: ", " (")
             error_message += ")"
             error_message = error_message.capitalize()
+            if len(positions) > 0 and len(positions[0]) > 1:
+                error_message = "{0}:{1}: ".format(positions[0][0], positions[0][1]) + error_message
             return (
                 "<body id=inline-error>"
                 + PHANTOM_STYLE
