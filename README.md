@@ -11,8 +11,8 @@
 - Fast Formatting
 - Syntax Checking
 - Inline Syntax Error Popup
-- Auto Scroll to the point Parsing Error occured
-- You can speficy multiple candidate paths of `.stylua.toml`
+- Auto Scroll to the point Parsing Error occurred
+- Multiple Candidate Paths to `.stylua.toml`
 
 
 ## Install
@@ -29,8 +29,14 @@
 git clone "https://github.com/aerobounce/Sublime-Pretty-Lua.git" "Pretty Lua"
 ```
 
-4. On Linux / Windows, specify absolute path to `stylua`.
+4. Linux / Windows users: Open Settings by <kbd>Preferences: Pretty Lua Settings</kbd> and setup path to `stylua`
 
+```js
+{
+    // Absolute Path to `stylua` Binary
+    "binary": ".../stylua"
+}
+```
 
 [tags]: https://github.com/aerobounce/Sublime-AutoClosePanel/tags
 [packagecontrol]: https://github.com/aerobounce/Sublime-Pretty-Lua
