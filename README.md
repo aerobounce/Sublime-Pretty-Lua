@@ -17,18 +17,9 @@
 
 ## Install
 
-> Package Control: Currently waiting for PR to be merged
-
-#### Manual Install
-
 1. Install [`stylua`][stylua]
-2. On terminal, move to the directory where you can open by `Preferences ▶ Browse Packages`
-3. Clone this repository:
-
-```sh
-git clone "https://github.com/aerobounce/Sublime-Pretty-Lua.git" "Pretty Lua"
-```
-
+2. `Package Control: Install Package`
+3. Install `Pretty Lua`
 4. Linux / Windows users: Open Settings by <kbd>Preferences: Pretty Lua Settings</kbd> and setup path to `stylua`
 
 ```js
@@ -39,5 +30,5 @@ git clone "https://github.com/aerobounce/Sublime-Pretty-Lua.git" "Pretty Lua"
 ```
 
 [tags]: https://github.com/aerobounce/Sublime-AutoClosePanel/tags
-[packagecontrol]: https://github.com/aerobounce/Sublime-Pretty-Lua
+[packagecontrol]: https://packagecontrol.io/packages/Pretty%20Lua
 [stylua]: https://github.com/JohnnyMorganz/StyLua
