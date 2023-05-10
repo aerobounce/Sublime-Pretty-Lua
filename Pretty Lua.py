@@ -264,11 +264,13 @@ class PrettyLuaListener(ViewEventListener):
         if not active_window:
             return
 
-        is_syntax_lua = "Lua" in self.view.settings().get("syntax")
-        is_extension_lua = active_window.extract_variables()["file_extension"] == "lua"
+        file_name = self.view.file_name()
+        if not file_name.endswith(".lua"):
+            return
 
-        if PrettyLua.format_on_save and (is_syntax_lua or is_extension_lua):
-            self.view.run_command("pretty_lua")
+        view = active_window.find_open_file(file_name)
+        if view:
+            view.run_command("pretty_lua")
 
     def on_close(self):
         view_id = self.view.id()
